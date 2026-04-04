@@ -1,0 +1,1585 @@
+{
+  "user": {
+    "id": "660000000000000000000001",
+    "name": "BALASKANTHAN AK",
+    "email": "user1@gmail.com"
+  },
+  "summary": {
+    "totalIncome": 60000,
+    "totalExpense": 86687,
+    "balance": -26687
+  },
+  "incomesdata": [
+    {
+      "category": "Salary",
+      "data": [
+        {
+          "_id": "69cf3bc2f35c3fb233d795dd",
+          "name": "Monthly Salary",
+          "value": 50000,
+          "date": "2026-04-03T04:02:10.456Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795de",
+          "name": "Bonus",
+          "value": 10000,
+          "date": "2026-04-03T04:02:10.456Z"
+        }
+      ]
+    }
+  ],
+  "expensesdata": [
+    {
+      "data": [
+        {
+          "_id": "69cf3bc2f35c3fb233d795e0",
+          "name": "Breakfast",
+          "value": 78,
+          "date": "2026-02-01T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e1",
+          "name": "Lunch",
+          "value": 162,
+          "date": "2026-02-01T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e2",
+          "name": "Dinner",
+          "value": 184,
+          "date": "2026-02-01T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e3",
+          "name": "Breakfast",
+          "value": 83,
+          "date": "2026-02-02T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e4",
+          "name": "Lunch",
+          "value": 159,
+          "date": "2026-02-02T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e5",
+          "name": "Dinner",
+          "value": 202,
+          "date": "2026-02-02T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e6",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-02-03T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e7",
+          "name": "Lunch",
+          "value": 139,
+          "date": "2026-02-03T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e8",
+          "name": "Dinner",
+          "value": 205,
+          "date": "2026-02-03T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795e9",
+          "name": "Breakfast",
+          "value": 75,
+          "date": "2026-02-04T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ea",
+          "name": "Lunch",
+          "value": 140,
+          "date": "2026-02-04T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795eb",
+          "name": "Dinner",
+          "value": 197,
+          "date": "2026-02-04T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ec",
+          "name": "Breakfast",
+          "value": 105,
+          "date": "2026-02-05T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ed",
+          "name": "Lunch",
+          "value": 154,
+          "date": "2026-02-05T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ee",
+          "name": "Snacks",
+          "value": 74,
+          "date": "2026-02-05T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ef",
+          "name": "Dinner",
+          "value": 201,
+          "date": "2026-02-05T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f0",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-02-06T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f1",
+          "name": "Lunch",
+          "value": 131,
+          "date": "2026-02-06T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f2",
+          "name": "Dinner",
+          "value": 202,
+          "date": "2026-02-06T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f3",
+          "name": "Breakfast",
+          "value": 102,
+          "date": "2026-02-07T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f4",
+          "name": "Lunch",
+          "value": 142,
+          "date": "2026-02-07T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f5",
+          "name": "Snacks",
+          "value": 68,
+          "date": "2026-02-07T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f6",
+          "name": "Dinner",
+          "value": 200,
+          "date": "2026-02-07T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f7",
+          "name": "Breakfast",
+          "value": 97,
+          "date": "2026-02-08T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f8",
+          "name": "Lunch",
+          "value": 137,
+          "date": "2026-02-08T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795f9",
+          "name": "Snacks",
+          "value": 74,
+          "date": "2026-02-08T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795fa",
+          "name": "Dinner",
+          "value": 243,
+          "date": "2026-02-08T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795fb",
+          "name": "Breakfast",
+          "value": 99,
+          "date": "2026-02-09T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795fc",
+          "name": "Lunch",
+          "value": 146,
+          "date": "2026-02-09T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795fd",
+          "name": "Snacks",
+          "value": 92,
+          "date": "2026-02-09T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795fe",
+          "name": "Dinner",
+          "value": 242,
+          "date": "2026-02-09T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d795ff",
+          "name": "Breakfast",
+          "value": 97,
+          "date": "2026-02-10T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79600",
+          "name": "Lunch",
+          "value": 140,
+          "date": "2026-02-10T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79601",
+          "name": "Snacks",
+          "value": 51,
+          "date": "2026-02-10T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79602",
+          "name": "Dinner",
+          "value": 195,
+          "date": "2026-02-10T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79603",
+          "name": "Breakfast",
+          "value": 81,
+          "date": "2026-02-11T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79604",
+          "name": "Lunch",
+          "value": 168,
+          "date": "2026-02-11T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79605",
+          "name": "Snacks",
+          "value": 92,
+          "date": "2026-02-11T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79606",
+          "name": "Dinner",
+          "value": 185,
+          "date": "2026-02-11T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79607",
+          "name": "Breakfast",
+          "value": 90,
+          "date": "2026-02-12T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79608",
+          "name": "Lunch",
+          "value": 138,
+          "date": "2026-02-12T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79609",
+          "name": "Dinner",
+          "value": 187,
+          "date": "2026-02-12T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960a",
+          "name": "Breakfast",
+          "value": 102,
+          "date": "2026-02-13T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960b",
+          "name": "Lunch",
+          "value": 167,
+          "date": "2026-02-13T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960c",
+          "name": "Snacks",
+          "value": 67,
+          "date": "2026-02-13T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960d",
+          "name": "Dinner",
+          "value": 209,
+          "date": "2026-02-13T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960e",
+          "name": "Breakfast",
+          "value": 82,
+          "date": "2026-02-14T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7960f",
+          "name": "Lunch",
+          "value": 165,
+          "date": "2026-02-14T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79610",
+          "name": "Snacks",
+          "value": 59,
+          "date": "2026-02-14T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79611",
+          "name": "Dinner",
+          "value": 206,
+          "date": "2026-02-14T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79612",
+          "name": "Breakfast",
+          "value": 100,
+          "date": "2026-02-15T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79613",
+          "name": "Lunch",
+          "value": 143,
+          "date": "2026-02-15T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79614",
+          "name": "Dinner",
+          "value": 233,
+          "date": "2026-02-15T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79615",
+          "name": "Breakfast",
+          "value": 84,
+          "date": "2026-02-16T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79616",
+          "name": "Lunch",
+          "value": 134,
+          "date": "2026-02-16T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79617",
+          "name": "Snacks",
+          "value": 54,
+          "date": "2026-02-16T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79618",
+          "name": "Dinner",
+          "value": 226,
+          "date": "2026-02-16T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79619",
+          "name": "Breakfast",
+          "value": 85,
+          "date": "2026-02-17T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961a",
+          "name": "Lunch",
+          "value": 138,
+          "date": "2026-02-17T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961b",
+          "name": "Snacks",
+          "value": 69,
+          "date": "2026-02-17T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961c",
+          "name": "Dinner",
+          "value": 235,
+          "date": "2026-02-17T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961d",
+          "name": "Breakfast",
+          "value": 77,
+          "date": "2026-02-18T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961e",
+          "name": "Lunch",
+          "value": 135,
+          "date": "2026-02-18T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7961f",
+          "name": "Dinner",
+          "value": 235,
+          "date": "2026-02-18T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79620",
+          "name": "Breakfast",
+          "value": 92,
+          "date": "2026-02-19T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79621",
+          "name": "Lunch",
+          "value": 144,
+          "date": "2026-02-19T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79622",
+          "name": "Dinner",
+          "value": 184,
+          "date": "2026-02-19T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79623",
+          "name": "Breakfast",
+          "value": 83,
+          "date": "2026-02-20T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79624",
+          "name": "Lunch",
+          "value": 165,
+          "date": "2026-02-20T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79625",
+          "name": "Snacks",
+          "value": 50,
+          "date": "2026-02-20T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79626",
+          "name": "Dinner",
+          "value": 204,
+          "date": "2026-02-20T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79627",
+          "name": "Breakfast",
+          "value": 82,
+          "date": "2026-02-21T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79628",
+          "name": "Lunch",
+          "value": 165,
+          "date": "2026-02-21T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79629",
+          "name": "Snacks",
+          "value": 69,
+          "date": "2026-02-21T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962a",
+          "name": "Dinner",
+          "value": 184,
+          "date": "2026-02-21T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962b",
+          "name": "Breakfast",
+          "value": 105,
+          "date": "2026-02-22T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962c",
+          "name": "Lunch",
+          "value": 134,
+          "date": "2026-02-22T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962d",
+          "name": "Dinner",
+          "value": 223,
+          "date": "2026-02-22T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962e",
+          "name": "Breakfast",
+          "value": 92,
+          "date": "2026-02-23T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7962f",
+          "name": "Lunch",
+          "value": 130,
+          "date": "2026-02-23T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79630",
+          "name": "Dinner",
+          "value": 225,
+          "date": "2026-02-23T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79631",
+          "name": "Breakfast",
+          "value": 75,
+          "date": "2026-02-24T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79632",
+          "name": "Lunch",
+          "value": 153,
+          "date": "2026-02-24T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79633",
+          "name": "Dinner",
+          "value": 233,
+          "date": "2026-02-24T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79634",
+          "name": "Breakfast",
+          "value": 104,
+          "date": "2026-02-25T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79635",
+          "name": "Lunch",
+          "value": 161,
+          "date": "2026-02-25T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79636",
+          "name": "Dinner",
+          "value": 184,
+          "date": "2026-02-25T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79637",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-02-26T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79638",
+          "name": "Lunch",
+          "value": 175,
+          "date": "2026-02-26T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79639",
+          "name": "Snacks",
+          "value": 59,
+          "date": "2026-02-26T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963a",
+          "name": "Dinner",
+          "value": 243,
+          "date": "2026-02-26T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963b",
+          "name": "Breakfast",
+          "value": 78,
+          "date": "2026-02-27T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963c",
+          "name": "Lunch",
+          "value": 173,
+          "date": "2026-02-27T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963d",
+          "name": "Dinner",
+          "value": 217,
+          "date": "2026-02-27T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963e",
+          "name": "Breakfast",
+          "value": 86,
+          "date": "2026-02-28T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7963f",
+          "name": "Lunch",
+          "value": 158,
+          "date": "2026-02-28T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79640",
+          "name": "Snacks",
+          "value": 82,
+          "date": "2026-02-28T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79641",
+          "name": "Dinner",
+          "value": 198,
+          "date": "2026-02-28T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79642",
+          "name": "Breakfast",
+          "value": 85,
+          "date": "2026-03-01T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79643",
+          "name": "Lunch",
+          "value": 142,
+          "date": "2026-03-01T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79644",
+          "name": "Dinner",
+          "value": 223,
+          "date": "2026-03-01T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79645",
+          "name": "Breakfast",
+          "value": 104,
+          "date": "2026-03-02T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79646",
+          "name": "Lunch",
+          "value": 155,
+          "date": "2026-03-02T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79647",
+          "name": "Snacks",
+          "value": 80,
+          "date": "2026-03-02T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79648",
+          "name": "Dinner",
+          "value": 190,
+          "date": "2026-03-02T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79649",
+          "name": "Breakfast",
+          "value": 75,
+          "date": "2026-03-03T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964a",
+          "name": "Lunch",
+          "value": 175,
+          "date": "2026-03-03T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964b",
+          "name": "Dinner",
+          "value": 237,
+          "date": "2026-03-03T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964c",
+          "name": "Breakfast",
+          "value": 99,
+          "date": "2026-03-04T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964d",
+          "name": "Lunch",
+          "value": 168,
+          "date": "2026-03-04T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964e",
+          "name": "Dinner",
+          "value": 188,
+          "date": "2026-03-04T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7964f",
+          "name": "Breakfast",
+          "value": 81,
+          "date": "2026-03-05T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79650",
+          "name": "Lunch",
+          "value": 140,
+          "date": "2026-03-05T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79651",
+          "name": "Dinner",
+          "value": 203,
+          "date": "2026-03-05T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79652",
+          "name": "Breakfast",
+          "value": 82,
+          "date": "2026-03-06T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79653",
+          "name": "Lunch",
+          "value": 139,
+          "date": "2026-03-06T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79654",
+          "name": "Dinner",
+          "value": 192,
+          "date": "2026-03-06T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79655",
+          "name": "Breakfast",
+          "value": 94,
+          "date": "2026-03-07T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79656",
+          "name": "Lunch",
+          "value": 134,
+          "date": "2026-03-07T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79657",
+          "name": "Dinner",
+          "value": 214,
+          "date": "2026-03-07T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79658",
+          "name": "Breakfast",
+          "value": 97,
+          "date": "2026-03-08T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79659",
+          "name": "Lunch",
+          "value": 149,
+          "date": "2026-03-08T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965a",
+          "name": "Snacks",
+          "value": 87,
+          "date": "2026-03-08T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965b",
+          "name": "Dinner",
+          "value": 195,
+          "date": "2026-03-08T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965c",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-03-09T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965d",
+          "name": "Lunch",
+          "value": 133,
+          "date": "2026-03-09T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965e",
+          "name": "Dinner",
+          "value": 246,
+          "date": "2026-03-09T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7965f",
+          "name": "Breakfast",
+          "value": 82,
+          "date": "2026-03-10T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79660",
+          "name": "Lunch",
+          "value": 156,
+          "date": "2026-03-10T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79661",
+          "name": "Dinner",
+          "value": 207,
+          "date": "2026-03-10T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79662",
+          "name": "Breakfast",
+          "value": 86,
+          "date": "2026-03-11T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79663",
+          "name": "Lunch",
+          "value": 155,
+          "date": "2026-03-11T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79664",
+          "name": "Dinner",
+          "value": 204,
+          "date": "2026-03-11T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79665",
+          "name": "Breakfast",
+          "value": 76,
+          "date": "2026-03-12T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79666",
+          "name": "Lunch",
+          "value": 165,
+          "date": "2026-03-12T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79667",
+          "name": "Snacks",
+          "value": 75,
+          "date": "2026-03-12T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79668",
+          "name": "Dinner",
+          "value": 240,
+          "date": "2026-03-12T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79669",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-03-13T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966a",
+          "name": "Lunch",
+          "value": 136,
+          "date": "2026-03-13T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966b",
+          "name": "Dinner",
+          "value": 214,
+          "date": "2026-03-13T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966c",
+          "name": "Breakfast",
+          "value": 91,
+          "date": "2026-03-14T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966d",
+          "name": "Lunch",
+          "value": 147,
+          "date": "2026-03-14T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966e",
+          "name": "Dinner",
+          "value": 193,
+          "date": "2026-03-14T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7966f",
+          "name": "Breakfast",
+          "value": 101,
+          "date": "2026-03-15T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79670",
+          "name": "Lunch",
+          "value": 138,
+          "date": "2026-03-15T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79671",
+          "name": "Dinner",
+          "value": 187,
+          "date": "2026-03-15T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79672",
+          "name": "Breakfast",
+          "value": 102,
+          "date": "2026-03-16T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79673",
+          "name": "Lunch",
+          "value": 141,
+          "date": "2026-03-16T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79674",
+          "name": "Dinner",
+          "value": 234,
+          "date": "2026-03-16T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79675",
+          "name": "Breakfast",
+          "value": 102,
+          "date": "2026-03-17T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79676",
+          "name": "Lunch",
+          "value": 158,
+          "date": "2026-03-17T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79677",
+          "name": "Snacks",
+          "value": 51,
+          "date": "2026-03-17T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79678",
+          "name": "Dinner",
+          "value": 243,
+          "date": "2026-03-17T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79679",
+          "name": "Breakfast",
+          "value": 95,
+          "date": "2026-03-18T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967a",
+          "name": "Lunch",
+          "value": 135,
+          "date": "2026-03-18T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967b",
+          "name": "Dinner",
+          "value": 185,
+          "date": "2026-03-18T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967c",
+          "name": "Breakfast",
+          "value": 87,
+          "date": "2026-03-19T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967d",
+          "name": "Lunch",
+          "value": 178,
+          "date": "2026-03-19T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967e",
+          "name": "Snacks",
+          "value": 70,
+          "date": "2026-03-19T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7967f",
+          "name": "Dinner",
+          "value": 224,
+          "date": "2026-03-19T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79680",
+          "name": "Breakfast",
+          "value": 100,
+          "date": "2026-03-20T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79681",
+          "name": "Lunch",
+          "value": 159,
+          "date": "2026-03-20T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79682",
+          "name": "Dinner",
+          "value": 230,
+          "date": "2026-03-20T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79683",
+          "name": "Breakfast",
+          "value": 98,
+          "date": "2026-03-21T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79684",
+          "name": "Lunch",
+          "value": 161,
+          "date": "2026-03-21T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79685",
+          "name": "Dinner",
+          "value": 187,
+          "date": "2026-03-21T20:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79686",
+          "name": "Breakfast",
+          "value": 76,
+          "date": "2026-03-22T08:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79687",
+          "name": "Lunch",
+          "value": 169,
+          "date": "2026-03-22T13:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79688",
+          "name": "Snacks",
+          "value": 82,
+          "date": "2026-03-22T17:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79689",
+          "name": "Dinner",
+          "value": 189,
+          "date": "2026-03-22T20:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "_id": "69cf3bc2f35c3fb233d7968a",
+          "name": "Commute",
+          "value": 53,
+          "date": "2026-02-01T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7968b",
+          "name": "Fuel",
+          "value": 230,
+          "date": "2026-02-01T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7968c",
+          "name": "Commute",
+          "value": 57,
+          "date": "2026-02-02T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7968d",
+          "name": "Commute",
+          "value": 35,
+          "date": "2026-02-03T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7968e",
+          "name": "Commute",
+          "value": 52,
+          "date": "2026-02-04T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7968f",
+          "name": "Commute",
+          "value": 47,
+          "date": "2026-02-05T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79690",
+          "name": "Commute",
+          "value": 33,
+          "date": "2026-02-06T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79691",
+          "name": "Commute",
+          "value": 51,
+          "date": "2026-02-07T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79692",
+          "name": "Fuel",
+          "value": 162,
+          "date": "2026-02-07T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79693",
+          "name": "Commute",
+          "value": 36,
+          "date": "2026-02-08T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79694",
+          "name": "Fuel",
+          "value": 234,
+          "date": "2026-02-08T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79695",
+          "name": "Commute",
+          "value": 44,
+          "date": "2026-02-09T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79696",
+          "name": "Commute",
+          "value": 49,
+          "date": "2026-02-10T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79697",
+          "name": "Commute",
+          "value": 51,
+          "date": "2026-02-11T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79698",
+          "name": "Commute",
+          "value": 34,
+          "date": "2026-02-12T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d79699",
+          "name": "Commute",
+          "value": 50,
+          "date": "2026-02-13T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969a",
+          "name": "Commute",
+          "value": 40,
+          "date": "2026-02-14T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969b",
+          "name": "Fuel",
+          "value": 171,
+          "date": "2026-02-14T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969c",
+          "name": "Commute",
+          "value": 46,
+          "date": "2026-02-15T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969d",
+          "name": "Fuel",
+          "value": 267,
+          "date": "2026-02-15T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969e",
+          "name": "Commute",
+          "value": 43,
+          "date": "2026-02-16T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d7969f",
+          "name": "Commute",
+          "value": 38,
+          "date": "2026-02-17T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a0",
+          "name": "Commute",
+          "value": 44,
+          "date": "2026-02-18T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a1",
+          "name": "Commute",
+          "value": 32,
+          "date": "2026-02-19T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a2",
+          "name": "Commute",
+          "value": 48,
+          "date": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a3",
+          "name": "Commute",
+          "value": 35,
+          "date": "2026-02-21T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a4",
+          "name": "Fuel",
+          "value": 180,
+          "date": "2026-02-21T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a5",
+          "name": "Commute",
+          "value": 40,
+          "date": "2026-02-22T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a6",
+          "name": "Fuel",
+          "value": 276,
+          "date": "2026-02-22T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a7",
+          "name": "Commute",
+          "value": 55,
+          "date": "2026-02-23T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a8",
+          "name": "Commute",
+          "value": 38,
+          "date": "2026-02-24T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796a9",
+          "name": "Commute",
+          "value": 45,
+          "date": "2026-02-25T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796aa",
+          "name": "Commute",
+          "value": 42,
+          "date": "2026-02-26T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ab",
+          "name": "Commute",
+          "value": 44,
+          "date": "2026-02-27T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ac",
+          "name": "Commute",
+          "value": 35,
+          "date": "2026-02-28T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ad",
+          "name": "Fuel",
+          "value": 287,
+          "date": "2026-02-28T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ae",
+          "name": "Commute",
+          "value": 42,
+          "date": "2026-03-01T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796af",
+          "name": "Fuel",
+          "value": 195,
+          "date": "2026-03-01T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b0",
+          "name": "Commute",
+          "value": 40,
+          "date": "2026-03-02T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b1",
+          "name": "Commute",
+          "value": 53,
+          "date": "2026-03-03T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b2",
+          "name": "Commute",
+          "value": 46,
+          "date": "2026-03-04T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b3",
+          "name": "Commute",
+          "value": 48,
+          "date": "2026-03-05T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b4",
+          "name": "Commute",
+          "value": 35,
+          "date": "2026-03-06T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b5",
+          "name": "Commute",
+          "value": 60,
+          "date": "2026-03-07T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b6",
+          "name": "Fuel",
+          "value": 168,
+          "date": "2026-03-07T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b7",
+          "name": "Commute",
+          "value": 60,
+          "date": "2026-03-08T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b8",
+          "name": "Fuel",
+          "value": 189,
+          "date": "2026-03-08T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796b9",
+          "name": "Commute",
+          "value": 55,
+          "date": "2026-03-09T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ba",
+          "name": "Commute",
+          "value": 48,
+          "date": "2026-03-10T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796bb",
+          "name": "Commute",
+          "value": 51,
+          "date": "2026-03-11T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796bc",
+          "name": "Commute",
+          "value": 49,
+          "date": "2026-03-12T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796bd",
+          "name": "Commute",
+          "value": 37,
+          "date": "2026-03-13T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796be",
+          "name": "Commute",
+          "value": 43,
+          "date": "2026-03-14T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796bf",
+          "name": "Fuel",
+          "value": 202,
+          "date": "2026-03-14T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c0",
+          "name": "Commute",
+          "value": 52,
+          "date": "2026-03-15T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c1",
+          "name": "Fuel",
+          "value": 248,
+          "date": "2026-03-15T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c2",
+          "name": "Commute",
+          "value": 53,
+          "date": "2026-03-16T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c3",
+          "name": "Commute",
+          "value": 57,
+          "date": "2026-03-17T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c4",
+          "name": "Commute",
+          "value": 40,
+          "date": "2026-03-18T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c5",
+          "name": "Commute",
+          "value": 44,
+          "date": "2026-03-19T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c6",
+          "name": "Commute",
+          "value": 41,
+          "date": "2026-03-20T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c7",
+          "name": "Commute",
+          "value": 43,
+          "date": "2026-03-21T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c8",
+          "name": "Fuel",
+          "value": 286,
+          "date": "2026-03-21T18:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796c9",
+          "name": "Commute",
+          "value": 47,
+          "date": "2026-03-22T09:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ca",
+          "name": "Fuel",
+          "value": 284,
+          "date": "2026-03-22T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "_id": "69cf3bc2f35c3fb233d796cb",
+          "name": "Personal Care",
+          "value": 1643,
+          "date": "2026-02-01T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796cc",
+          "name": "Personal Care",
+          "value": 1202,
+          "date": "2026-02-03T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796cd",
+          "name": "Home Decor",
+          "value": 1758,
+          "date": "2026-02-08T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796ce",
+          "name": "Personal Care",
+          "value": 1888,
+          "date": "2026-02-11T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796cf",
+          "name": "Electronics",
+          "value": 2057,
+          "date": "2026-02-15T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d0",
+          "name": "Clothing",
+          "value": 1223,
+          "date": "2026-02-17T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d1",
+          "name": "Personal Care",
+          "value": 1945,
+          "date": "2026-02-18T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d2",
+          "name": "Personal Care",
+          "value": 1709,
+          "date": "2026-02-26T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d3",
+          "name": "Clothing",
+          "value": 1063,
+          "date": "2026-03-09T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d4",
+          "name": "Clothing",
+          "value": 1835,
+          "date": "2026-03-12T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d5",
+          "name": "Clothing",
+          "value": 1968,
+          "date": "2026-03-13T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d6",
+          "name": "Electronics",
+          "value": 1004,
+          "date": "2026-03-19T16:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d7",
+          "name": "Home Decor",
+          "value": 2173,
+          "date": "2026-03-20T16:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "_id": "69cf3bc2f35c3fb233d796d8",
+          "name": "Rent",
+          "value": 15000,
+          "date": "2026-02-01T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796d9",
+          "name": "Internet",
+          "value": 800,
+          "date": "2026-02-05T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796da",
+          "name": "Electricity",
+          "value": 1536,
+          "date": "2026-02-10T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796db",
+          "name": "Mobile",
+          "value": 500,
+          "date": "2026-02-15T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796dc",
+          "name": "Rent",
+          "value": 15000,
+          "date": "2026-03-01T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796dd",
+          "name": "Internet",
+          "value": 800,
+          "date": "2026-03-05T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796de",
+          "name": "Electricity",
+          "value": 1480,
+          "date": "2026-03-10T10:00:00.000Z"
+        },
+        {
+          "_id": "69cf3bc2f35c3fb233d796df",
+          "name": "Mobile",
+          "value": 500,
+          "date": "2026-03-15T10:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

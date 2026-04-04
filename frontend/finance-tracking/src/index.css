@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ===== Root Colors ===== */
+:root {
+  --primary: #00286d;
+  --primary-container: #003d9b;
+  --secondary: #49607c;
+  --background: #f7f9ff;
+  --surface: #f7f9ff;
+  --surface-container-low: #edf4ff;
+  --surface-container: #e3efff;
+  --surface-container-high: #d8eaff;
+  --surface-container-highest: #cee5ff;
+  --surface-dim: #bfddfe;
+  --on-surface: #001d33;
+  --on-primary: #ffffff;
+  --on-secondary-container: #4b637e;
+  --outline: #707975;
+  --outline-variant: #bfc9c4;
+}
+
+/* ===== Utility Classes ===== */
+
+/* Backgrounds */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-surface {
+  background-color: var(--surface);
+}
+.bg-surface-container-low {
+  background-color: var(--surface-container-low);
+}
+.bg-surface-container {
+  background-color: var(--surface-container);
+}
+.bg-surface-container-high {
+  background-color: var(--surface-container-high);
+}
+.bg-surface-container-highest {
+  background-color: var(--surface-container-highest);
+}
+
+/* Text */
+.text-primary {
+  color: var(--primary);
+}
+.text-on-surface {
+  color: var(--on-surface);
+}
+.text-on-primary {
+  color: var(--on-primary);
+}
+.text-on-secondary-container {
+  color: var(--on-secondary-container);
+}
+
+/* Border */
+.border-outline {
+  border-color: var(--outline);
+}
+.border-outline-variant {
+  border-color: var(--outline-variant);
+}
+.border-outline-light {
+  border-color: rgba(191, 201, 196, 0.15);
+}
+
+/* Effects */
+.glass-effect {
+  background: rgba(247, 249, 255, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, #00286d 0%, #003d9b 100%);
+}
+
+/* Inputs */
+.input-field {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border-radius: 12px;
+  border: none;
+  background: var(--surface-container-low);
+  color: var(--on-surface);
+  font-size: 14px;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 40, 109, 0.2);
+}
+
+/* ===== Animations ===== */
+@keyframes spin-continuous {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-continuous {
+  animation: spin-continuous 2s linear infinite;
+}
+
+.group:hover .group-hover\\:animate-spin-continuous {
+  animation: spin-continuous 1s linear infinite;
+}
+
+/* Recharts focus outline cleanup */
+.recharts-wrapper,
+.recharts-wrapper:focus,
+.recharts-wrapper:focus-visible,
+.recharts-wrapper svg,
+.recharts-wrapper svg:focus,
+.recharts-wrapper svg:focus-visible,
+.recharts-surface,
+.recharts-surface:focus,
+.recharts-surface:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
