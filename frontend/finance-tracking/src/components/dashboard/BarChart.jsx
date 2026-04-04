@@ -133,7 +133,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   const expenseEntry = payload.find((entry) => entry.dataKey === "expense");
 
   return (
-    <div className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
+    <div className="rounded-2xl border border-black/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
       <p className="text-sm font-bold text-primary">{label}</p>
       <div className="mt-3 space-y-2 text-sm font-medium text-on-secondary-container">
         <div className="flex items-center justify-between gap-6">
@@ -190,7 +190,7 @@ function TransactionBarChart({
   );
 
   return (
-    <section className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.08)]">
+    <section className="rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.08)]">
       <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h3 className="text-xl font-bold text-primary">
@@ -259,7 +259,7 @@ function TransactionBarChart({
           </ResponsiveContainer>
         </div>
       ) : (
-        <div className="flex min-h-60 items-center justify-center rounded-3xl border border-dashed border-outline-variant/20 bg-surface-container/40 text-sm font-medium text-on-secondary-container">
+        <div className="flex min-h-60 items-center justify-center rounded-3xl border border-dashed border-black/10 bg-surface-container/40 text-sm font-medium text-on-secondary-container">
           No transaction data available yet.
         </div>
       )}

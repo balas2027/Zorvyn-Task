@@ -82,7 +82,7 @@ function Profile({ dashboardData }) {
         </div>
 
         <div className="grid gap-6 md:grid-cols-[1.2fr_1fr]">
-          <section className="rounded-4xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
+          <section className="rounded-4xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
             <div className="mb-6 flex items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-primary">
                 <UserCircle2 className="h-8 w-8" />
@@ -104,7 +104,7 @@ function Profile({ dashboardData }) {
               {infoRows.map((row) => (
                 <div
                   key={row.label}
-                  className="flex items-center justify-between rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-3"
+                  className="flex items-center justify-between rounded-2xl border border-black/10 bg-surface-container-low px-4 py-3"
                 >
                   <span className="flex items-center gap-2 text-sm font-semibold text-primary">
                     <row.icon className="h-4 w-4" />
@@ -118,7 +118,7 @@ function Profile({ dashboardData }) {
             </div>
 
             {profile?.bio ? (
-              <div className="mt-6 rounded-2xl border border-outline-variant/10 bg-white px-4 py-3">
+              <div className="mt-6 rounded-2xl border border-black/10 bg-white px-4 py-3">
                 <p className="text-xs uppercase tracking-wider text-on-secondary-container">
                   Bio
                 </p>
@@ -127,7 +127,7 @@ function Profile({ dashboardData }) {
             ) : null}
           </section>
 
-          <section className="rounded-4xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
+          <section className="rounded-4xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
             <h3 className="text-lg font-bold text-primary">
               Financial Snapshot
             </h3>

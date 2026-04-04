@@ -165,7 +165,7 @@ function MainDashBoard(props) {
                 {dashboardsummary.map((item) => (
                   <div
                     key={item.title}
-                    className="bg-surface-container-lowest group p-8 rounded-full shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-outline-variant/10 relative overflow-hidden group"
+                    className="bg-surface-container-lowest group p-8 rounded-full shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-black/10 relative overflow-hidden group"
                   >
                     <div
                       className={`absolute h-10 w-10 group-hover:bg-${item.color}/30 group-hover:h-20 group-hover:w-20 transition-all duration-500 rounded-bl-xl right-0 top-0 z-10 bg-${item.color}/20 `}
@@ -222,7 +222,7 @@ function MainDashBoard(props) {
             </Suspense>
           </div>
           <div className="mx-auto mt-10 px-2 md:px-10 pb-10">
-            <section className="rounded-4xl border border-outline-variant/5 bg-surface-container-lowest p-6 shadow-[0_16px_48px_-12px_rgba(0,29,51,0.08)] sm:p-10">
+            <section className="rounded-4xl border border-black/10 bg-surface-container-low p-6 shadow-[0_16px_48px_-12px_rgba(0,29,51,0.08)] sm:p-10">
               <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <h3 className="text-xl font-bold text-primary headline-font">
@@ -244,7 +244,7 @@ function MainDashBoard(props) {
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-left">
                   <thead>
-                    <tr className="border-b border-outline-variant/10">
+                    <tr className="border-b border-black/10">
                       <th className="pb-4 text-[11px] font-bold uppercase tracking-widest text-on-secondary-container/60">
                         Entity
                       </th>
@@ -260,7 +260,7 @@ function MainDashBoard(props) {
                     </tr>
                   </thead>
 
-                  <tbody className="divide-y divide-outline-variant/5">
+                  <tbody className="divide-y divide-black/10">
                     {recentTransactions.length ? (
                       recentTransactions.map((transaction, index) => {
                         const isIncome = transaction.type === "income";
@@ -275,7 +275,7 @@ function MainDashBoard(props) {
                         return (
                           <tr
                             key={rowKey}
-                            className="group cursor-pointer transition-colors hover:bg-surface-dim"
+                            className="group cursor-pointer transition-colors hover:bg-blue-100"
                           >
                             <td className="py-6 pr-4">
                               <div className="flex items-center gap-4">
@@ -357,8 +357,8 @@ export default MainDashBoard;
 
 function ChartFallback({ label }) {
   return (
-    <div className="flex min-h-[320px] items-center justify-center rounded-4xl border border-outline-variant/10 bg-surface-container-lowest shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
-      <div className="flex items-center gap-3 rounded-2xl border border-outline-variant/10 bg-white px-5 py-4">
+    <div className="flex min-h-[320px] items-center justify-center rounded-4xl border border-black/10 bg-surface-container-lowest shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+      <div className="flex items-center gap-3 rounded-2xl border border-black/10 bg-white px-5 py-4">
         <span className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
         <span className="text-sm font-medium text-on-secondary-container">
           {label}

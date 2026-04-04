@@ -64,7 +64,7 @@ const CustomTooltip = ({ active, payload }) => {
   const entry = payload[0]?.payload;
 
   return (
-    <div className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
+    <div className="rounded-2xl border border-black/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
       <p className="text-sm font-bold text-primary">{entry?.name}</p>
       <p className="mt-2 text-sm font-medium text-on-secondary-container">
         {entry?.name === "income" ? "Income" : "Expense"}:{" "}
@@ -85,7 +85,7 @@ function PieChartCard({ transactions = [] }) {
   const total = chartData.reduce((sum, item) => sum + item.value, 0);
   console.log(chartData);
   return (
-    <section className="flex flex-col rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+    <section className="flex flex-col rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h3 className="text-xl font-bold text-primary">

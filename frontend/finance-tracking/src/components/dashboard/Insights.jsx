@@ -139,7 +139,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
     <div className="flex-1 min-h-screen overflow-y-auto pb-8 pt-4 sm:pt-24 md:py-8 md:pt-8">
       <div className="mx-auto px-2 md:px-10">
         <div className="grid gap-6 sm:grid-cols-3">
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <div className="mb-4 flex items-center gap-3">
               <div className="rounded-xl bg-emerald-100 p-2">
                 <TrendingUp className="h-5 w-5 text-emerald-700" />
@@ -154,7 +154,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
             </p>
           </div>
 
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <div className="mb-4 flex items-center gap-3">
               <div className="rounded-xl bg-rose-100 p-2">
                 <PieChart className="h-5 w-5 text-rose-700" />
@@ -169,7 +169,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
             </p>
           </div>
 
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <div className="mb-4 flex items-center gap-3">
               <div className="rounded-xl bg-blue-100 p-2">
                 <BarChart3 className="h-5 w-5 text-primary" />
@@ -201,7 +201,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
             </p>
           </div>
 
-          <div className="inline-flex flex-wrap gap-2 self-start rounded-full border border-outline-variant/15 bg-surface-container-lowest p-1 shadow-[0_8px_24px_-12px_rgba(0,29,51,0.16)] lg:self-auto">
+          <div className="inline-flex flex-wrap gap-2 self-start rounded-full border border-black/10 bg-surface-container-lowest p-1 shadow-[0_8px_24px_-12px_rgba(0,29,51,0.16)] lg:self-auto">
             {[
               { key: "day", label: "Day Wise" },
               { key: "month", label: "Month Wise" },
@@ -239,13 +239,13 @@ function Insights({ dashboardData: dashboardDataProp }) {
         </div>
 
         {!dashboardData && (
-          <div className="mt-8 rounded-4xl border border-dashed border-outline-variant/20 bg-surface-container-lowest p-8 text-sm font-medium text-on-secondary-container">
+          <div className="mt-8 rounded-4xl border border-dashed border-black/10 bg-surface-container-lowest p-8 text-sm font-medium text-on-secondary-container">
             No dashboard data is available yet. Add income or expenses to
             populate the chart.
           </div>
         )}
                 <div className="mt-6 grid gap-6 sm:grid-cols-3">
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <p className="text-xs font-bold uppercase tracking-wider text-on-secondary-container">
               Highest Spending Category
             </p>
@@ -257,7 +257,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
             </p>
           </div>
 
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <p className="text-xs font-bold uppercase tracking-wider text-on-secondary-container">
               Monthly Comparison
             </p>
@@ -273,7 +273,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
             </p>
           </div>
 
-          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+          <div className="rounded-xl border border-black/10 bg-surface-container-lowest p-5 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
             <p className="text-xs font-bold uppercase tracking-wider text-on-secondary-container">
               Observation
             </p>
@@ -283,7 +283,7 @@ function Insights({ dashboardData: dashboardDataProp }) {
           </div>
         </div>
 
-        <div className="mt-8 rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+        <div className="mt-8 rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
           <div className="mb-4 flex items-center gap-3">
             <div className="rounded-xl bg-blue-100 p-2">
               <Wallet2 className="h-5 w-5 text-primary" />
@@ -307,8 +307,8 @@ export default Insights;
 
 function ChartFallback({ label }) {
   return (
-    <div className="flex min-h-90 items-center justify-center rounded-4xl border border-outline-variant/10 bg-surface-container-lowest shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
-      <div className="flex items-center gap-3 rounded-2xl border border-outline-variant/10 bg-white px-5 py-4">
+    <div className="flex min-h-90 items-center justify-center rounded-4xl border border-black/10 bg-surface-container-lowest shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+      <div className="flex items-center gap-3 rounded-2xl border border-black/10 bg-white px-5 py-4">
         <span className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
         <span className="text-sm font-medium text-on-secondary-container">
           {label}

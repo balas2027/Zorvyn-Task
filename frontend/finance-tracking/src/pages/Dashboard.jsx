@@ -134,7 +134,7 @@ function Dashboard() {
                 <Bell className="h-5 w-5" />
               </div>
               <div
-                className="inline-flex items-center rounded-full border border-outline-variant/20 bg-surface-container p-1"
+                className="inline-flex items-center rounded-full border border-black/10 bg-surface-container p-1"
                 role="group"
                 aria-label="Role toggle"
               >
@@ -179,7 +179,7 @@ function Dashboard() {
                   <User2Icon className="h-5 w-5" />
                 </button>
                 {isProfileMenuOpen ? (
-                  <div className="absolute right-0 top-12 z-20 w-44 rounded-2xl border border-outline-variant/20 bg-white p-2 shadow-[0_12px_34px_-10px_rgba(0,29,51,0.25)]">
+                  <div className="absolute right-0 top-12 z-20 w-44 rounded-2xl border border-black/10 bg-white p-2 shadow-[0_12px_34px_-10px_rgba(0,29,51,0.25)]">
                     <button
                       type="button"
                       onClick={handleProfileView}

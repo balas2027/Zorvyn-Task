@@ -85,7 +85,7 @@ function Home() {
                 >
                   Start Free Trial
                 </button>
-                <button className="border border-outline-variant/15 text-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-low transition-all cursor-pointer">
+                <button className="border border-black/10 text-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-low transition-all cursor-pointer">
                   View Demo
                 </button>
               </div>

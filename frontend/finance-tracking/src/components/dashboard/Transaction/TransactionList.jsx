@@ -124,7 +124,7 @@ function TransactionList({
         <button
           type="button"
           onClick={handleOpenDrawer}
-          className="ml-3 inline-flex items-center gap-2 rounded-full border border-outline-variant/30 bg-surface-container px-4 py-4 text-sm font-semibold text-on-surface transition hover:bg-surface-container-high"
+          className="ml-3 inline-flex items-center gap-2 rounded-full border border-black/10 bg-surface-container px-4 py-4 text-sm font-semibold text-on-surface transition hover:bg-surface-container-high"
         >
           <SlidersHorizontal className="h-4 w-4" />
           Filters
@@ -165,7 +165,7 @@ function TransactionList({
                 onChange={(event) =>
                   updateDraftFilter("type", event.target.value)
                 }
-                className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
               >
                 <option value="">All</option>
                 <option value="income">Income</option>
@@ -182,7 +182,7 @@ function TransactionList({
                 onChange={(event) =>
                   updateDraftFilter("category", event.target.value)
                 }
-                className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
               >
                 <option value="">All Categories</option>
                 {categories.map((cat) => (
@@ -205,7 +205,7 @@ function TransactionList({
                   onChange={(event) =>
                     updateDraftFilter("minAmount", event.target.value)
                   }
-                  className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
                   placeholder="0"
                 />
               </div>
@@ -220,7 +220,7 @@ function TransactionList({
                   onChange={(event) =>
                     updateDraftFilter("maxAmount", event.target.value)
                   }
-                  className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
                   placeholder="10000"
                 />
               </div>
@@ -235,7 +235,7 @@ function TransactionList({
                 onChange={(event) =>
                   updateDraftFilter("year", event.target.value)
                 }
-                className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
               >
                 <option value="">All Years</option>
                 {availableYears.map((year) => (
@@ -257,7 +257,7 @@ function TransactionList({
                   onChange={(event) =>
                     updateDraftFilter("startDate", event.target.value)
                   }
-                  className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
                 />
               </div>
               <div>
@@ -270,7 +270,7 @@ function TransactionList({
                   onChange={(event) =>
                     updateDraftFilter("endDate", event.target.value)
                   }
-                  className="w-full rounded-xl border border-outline-variant/30 px-3 py-2 text-sm focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border border-black/10 px-3 py-2 text-sm focus:border-primary focus:outline-none"
                 />
               </div>
             </div>
@@ -280,7 +280,7 @@ function TransactionList({
             <button
               type="button"
               onClick={handleClear}
-              className="rounded-full border border-outline-variant/30 px-4 py-2 text-sm font-semibold text-primary"
+              className="rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-primary"
             >
               Clear All
             </button>
@@ -296,13 +296,13 @@ function TransactionList({
       </Drawer>
 
       {loading ? (
-        <div className="bg-surface-container-low p-8 rounded-4xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-outline-variant/10">
+        <div className="bg-surface-container-low p-8 rounded-4xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-black/10">
           <p className="text-center text-on-secondary-container">
             Loading transactions...
           </p>
         </div>
       ) : sortedTransactions.length > 0 ? (
-        <div className="bg-surface-container-low rounded-4xl md:p-4 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-outline-variant/10">
+        <div className="bg-surface-container-low rounded-4xl md:p-4 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-black/10">
           <section className="bg-surface-container-low rounded-2xl overflow-hidden">
             <div className="max-h-[calc(100vh-320px)] overflow-y-auto overflow-x-auto">
               <table className="w-full border-collapse">
@@ -361,7 +361,7 @@ function TransactionList({
                         </td>
                         <td className="py-5 px-6">
                           <div className="flex items-center gap-3">
-                            <div className="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container border border-outline-variant/10">
+                            <div className="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container border border-black/10">
                               {isIncome ? (
                                 <TrendingUp className="h-4 w-4 text-green-600" />
                               ) : (
@@ -437,7 +437,7 @@ function TransactionList({
                 type="button"
                 onClick={onPreviousPage}
                 disabled={!pagination.hasPrevPage}
-                className="rounded-full border border-outline-variant/30 px-4 py-2 text-sm font-semibold text-primary disabled:cursor-not-allowed disabled:opacity-40"
+                className="rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-primary disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Previous
               </button>
@@ -445,7 +445,7 @@ function TransactionList({
                 type="button"
                 onClick={onNextPage}
                 disabled={!pagination.hasNextPage}
-                className="rounded-full border border-outline-variant/30 px-4 py-2 text-sm font-semibold text-primary disabled:cursor-not-allowed disabled:opacity-40"
+                className="rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-primary disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Next
               </button>
@@ -453,7 +453,7 @@ function TransactionList({
           </div>
         </div>
       ) : (
-        <div className="bg-surface-container-lowest p-8 rounded-4xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-outline-variant/10">
+        <div className="bg-surface-container-lowest p-8 rounded-4xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-black/10">
           <p className="text-center text-on-secondary-container">
             No transactions found.
           </p>

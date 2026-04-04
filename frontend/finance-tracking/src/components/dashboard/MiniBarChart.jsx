@@ -87,7 +87,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   const expenseEntry = payload.find((entry) => entry.dataKey === "expense");
 
   return (
-    <div className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
+    <div className="rounded-2xl border border-black/10 bg-surface-container-low px-4 py-3 shadow-[0_12px_32px_-12px_rgba(0,29,51,0.3)]">
       <p className="text-sm font-bold text-primary">{label}</p>
       <p className="mt-2 flex items-center justify-between gap-6 text-sm font-medium text-on-secondary-container">
         <span className="flex items-center gap-2">
@@ -131,7 +131,7 @@ function MiniBarChart({ transactions = [] }) {
   );
 
   return (
-    <section className="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
+    <section className="rounded-xl border border-black/10 bg-surface-container-lowest p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)]">
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h3 className="text-xl font-bold text-primary">Monthly Overview</h3>

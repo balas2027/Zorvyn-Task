@@ -59,7 +59,7 @@ function Signup() {
 
       <main className="flex items-center justify-center bg-surface">
         <div className="w-full max-w-xl relative">
-          <div className="relative bg-surface-container-lowest rounded-full p-8 md:p-10 border border-outline-variant/15 shadow-sm">
+          <div className="relative bg-surface-container-lowest rounded-full p-8 md:p-10 border border-black/10 shadow-sm">
             <div className="mb-10 text-center">
               <h1 className="font-headline text-4xl font-extrabold text-on-surface mb-3">
                 Begin Your Legacy

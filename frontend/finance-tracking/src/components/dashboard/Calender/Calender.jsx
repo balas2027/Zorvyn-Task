@@ -191,7 +191,7 @@ const CalendarDayTimeline = ({ selectedDate, transactions, onBackToMonth }) => {
               return (
                 <div
                   key={`${transaction.type}-${transaction.id}`}
-                  className="rounded-3xl border border-outline-variant/10 bg-surface-container-lowest p-5 shadow-[0_8px_24px_-12px_rgba(0,29,51,0.12)]"
+                  className="rounded-3xl border border-black/10 bg-surface-container-lowest p-5 shadow-[0_8px_24px_-12px_rgba(0,29,51,0.12)]"
                 >
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="flex items-center gap-4">
@@ -233,7 +233,7 @@ const CalendarDayTimeline = ({ selectedDate, transactions, onBackToMonth }) => {
             })}
           </div>
         ) : (
-          <div className="flex min-h-56 items-center justify-center rounded-3xl border border-dashed border-outline-variant/20 bg-surface-container/40 text-sm font-medium text-on-secondary-container">
+          <div className="flex min-h-56 items-center justify-center rounded-3xl border border-dashed border-black/10 bg-surface-container/40 text-sm font-medium text-on-secondary-container">
             No transactions found for this day.
           </div>
         )}

@@ -56,7 +56,7 @@ function TransactionForm({
 
   return (
     <>
-      <div className="bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-outline-variant/10 mb-8">
+      <div className="bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] border border-black/10 mb-8">
         <h3 className="text-lg font-bold text-primary mb-6">
           {editingId ? "Edit Transaction" : "Add New Transaction"}
         </h3>
@@ -72,7 +72,7 @@ function TransactionForm({
                 value={formData.description}
                 onChange={onInputChange}
                 placeholder="e.g., Grocery Shopping"
-                className="w-full px-4 py-2 rounded-xl border border-outline-variant/30 focus:ring-0"
+                className="w-full px-4 py-2 rounded-xl border border-black/10 focus:ring-0"
               />
             </div>
             <div>
@@ -86,7 +86,7 @@ function TransactionForm({
                 onChange={onInputChange}
                 placeholder="0.00"
                 step="0.01"
-                className="w-full px-4 py-2 rounded-xl border border-outline-variant/30 focus:ring-0"
+                className="w-full px-4 py-2 rounded-xl border border-black/10 focus:ring-0"
               />
             </div>
             <div>
@@ -97,7 +97,7 @@ function TransactionForm({
                 name="type"
                 value={formData.type}
                 onChange={onInputChange}
-                className="w-full px-4 py-2 rounded-xl border border-outline-variant/30 focus:ring-0"
+                className="w-full px-4 py-2 rounded-xl border border-black/10 focus:ring-0"
               >
                 <option value="expense">Expense</option>
                 <option value="income">Income</option>
@@ -121,7 +121,7 @@ function TransactionForm({
                 name="category"
                 value={formData.category}
                 onChange={onInputChange}
-                className="w-full px-4 py-2 rounded-xl border border-outline-variant/30 focus:ring-0"
+                className="w-full px-4 py-2 rounded-xl border border-black/10 focus:ring-0"
               >
                 <option value="">Select a category</option>
                 {availableCategories.map((cat) => (
@@ -140,7 +140,7 @@ function TransactionForm({
                 name="date"
                 value={formData.date}
                 onChange={onInputChange}
-                className="w-full px-4 py-2 rounded-xl border border-outline-variant/30 focus:ring-0"
+                className="w-full px-4 py-2 rounded-xl border border-black/10 focus:ring-0"
               />
             </div>
           </div>
@@ -154,7 +154,7 @@ function TransactionForm({
             <button
               type="button"
               onClick={onCancel}
-              className="flex-1 px-4 py-2 rounded-xl border border-outline-variant text-sm font-semibold text-primary transition"
+              className="flex-1 px-4 py-2 rounded-xl border border-black/10 text-sm font-semibold text-primary transition"
             >
               Cancel
             </button>
@@ -164,7 +164,7 @@ function TransactionForm({
 
       {isCategoryPopupOpen ? (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
-          <div className="w-full max-w-md rounded-2xl border border-outline-variant/20 bg-white p-6 shadow-[0_12px_42px_-10px_rgba(0,29,51,0.35)]">
+          <div className="w-full max-w-md rounded-2xl border border-black/10 bg-white p-6 shadow-[0_12px_42px_-10px_rgba(0,29,51,0.35)]">
             <h4 className="text-lg font-bold text-primary">Add Category</h4>
             <p className="mt-1 text-sm text-on-secondary-container">
               Create a new category to use in your transaction form.
@@ -185,7 +185,7 @@ function TransactionForm({
                     }))
                   }
                   placeholder="e.g., Investments"
-                  className="w-full rounded-xl border border-outline-variant/30 px-4 py-2"
+                  className="w-full rounded-xl border border-black/10 px-4 py-2"
                 />
               </div>
 
@@ -201,7 +201,7 @@ function TransactionForm({
                       type: event.target.value,
                     }))
                   }
-                  className="w-full rounded-xl border border-outline-variant/30 px-4 py-2"
+                  className="w-full rounded-xl border border-black/10 px-4 py-2"
                 >
                   <option value="expense">Expense</option>
                   <option value="income">Income</option>
@@ -212,7 +212,7 @@ function TransactionForm({
                 <button
                   type="button"
                   onClick={() => setIsCategoryPopupOpen(false)}
-                  className="flex-1 rounded-xl border border-outline-variant/30 px-4 py-2 text-sm font-semibold text-primary"
+                  className="flex-1 rounded-xl border border-black/10 px-4 py-2 text-sm font-semibold text-primary"
                   disabled={isAddingCategory}
                 >
                   Cancel
