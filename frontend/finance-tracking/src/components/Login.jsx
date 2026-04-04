@@ -21,7 +21,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("https://zorvyn-task-lemon.vercel.app/api/login", {
         email: form.email,
         password: form.password,
       });

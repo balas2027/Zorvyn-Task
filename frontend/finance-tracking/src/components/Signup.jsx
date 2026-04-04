@@ -25,7 +25,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/register", {
+      const response = await axios.post("https://zorvyn-task-lemon.vercel.app/api/register", {
         name: form.name,
         email: form.email,
         password: form.password,

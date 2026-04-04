@@ -16,7 +16,7 @@ function UserDashboardData({ children }) {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/summary/${userId}`,
+        `https://zorvyn-task-lemon.vercel.app/api/summary/${userId}`,
       );
       setDashboardData(response.data || null);
     } catch (error) {

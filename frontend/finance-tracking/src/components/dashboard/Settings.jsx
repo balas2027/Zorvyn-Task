@@ -66,7 +66,7 @@ function Settings() {
 
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/${userId}/profile`,
+          `https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`,
         );
         const user = response.data?.user;
         if (!user) {
@@ -111,7 +111,7 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`http://localhost:5000/api/users/${userId}/profile`, {
+      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`, {
         name: profile.name,
         email: profile.email,
         phone: profile.phone,
@@ -144,7 +144,7 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`http://localhost:5000/api/users/${userId}/settings`, {
+      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/settings`, {
         notifications,
       });
 
@@ -179,12 +179,12 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`http://localhost:5000/api/users/${userId}/settings`, {
+      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/settings`, {
         security,
       });
 
       if (canSavePassword) {
-        await axios.put(`http://localhost:5000/api/users/${userId}/password`, {
+        await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/password`, {
           currentPassword: passwordForm.currentPassword,
           newPassword: passwordForm.newPassword,
         });
@@ -222,7 +222,7 @@ function Settings() {
 
     try {
       setSaving(true);
-      await axios.delete(`http://localhost:5000/api/users/${userId}`);
+      await axios.delete(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}`);
       localStorage.removeItem("userId");
       notify({ type: "success", title: "Account deleted successfully" });
       navigate("/signup", { replace: true });

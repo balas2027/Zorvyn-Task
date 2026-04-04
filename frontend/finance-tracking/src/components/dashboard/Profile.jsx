@@ -17,7 +17,7 @@ function Profile({ dashboardData }) {
 
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/${userId}/profile`,
+          `https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`,
         );
         setProfile(response.data?.user || null);
       } catch (error) {

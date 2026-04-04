@@ -108,7 +108,7 @@ function Transaction({
         params.append("search", trimmedSearch);
       }
 
-      const url = `http://localhost:5000/api/transactions/${userId}?${params.toString()}`;
+      const url = `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}?${params.toString()}`;
       const response = await axios.get(url);
 
       setTransactions(response.data?.data || []);
@@ -136,7 +136,7 @@ function Transaction({
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/api/categories", {
+      const response = await axios.get("https://zorvyn-task-lemon.vercel.app/api/categories", {
         params: { userId },
       });
       setCategories(response.data?.categories || []);
@@ -190,7 +190,7 @@ function Transaction({
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/transactions/${userId}/${editingId}`,
+          `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}/${editingId}`,
           {
             description: formData.description,
             amount: parseFloat(formData.amount),
@@ -209,9 +209,9 @@ function Transaction({
         };
 
         if (formData.type === "income") {
-          await axios.post("http://localhost:5000/api/incomes", payload);
+          await axios.post("https://zorvyn-task-lemon.vercel.app/api/incomes", payload);
         } else {
-          await axios.post("http://localhost:5000/api/expenses", payload);
+          await axios.post("https://zorvyn-task-lemon.vercel.app/api/expenses", payload);
         }
       }
 
@@ -244,7 +244,7 @@ function Transaction({
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/transactions/${userId}/${transactionId}`,
+        `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}/${transactionId}`,
       );
       await fetchTransactions();
       onTransactionChanged();
@@ -263,7 +263,7 @@ function Transaction({
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/categories",
+        "https://zorvyn-task-lemon.vercel.app/api/categories",
         {
           name,
           type,
