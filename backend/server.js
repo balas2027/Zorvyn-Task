@@ -76,6 +76,10 @@ app.get("/api", async (req, res) => {
   res.send("Welcome to Finance Tracker API");
 });
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Finance Tracker backend is running" });
+});
+
 app.post("/api/register", async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -991,6 +995,11 @@ app.get("/api/summary/:userId", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
