@@ -2,11 +2,29 @@ const express = require("express");
 const cors = require("cors");
 const { User, Expense, Income, Category, Transaction } = require("./model");
 const app = express();
+require("dotenv").config();
 
 const mongoose = require("mongoose");
+const mongoUser = process.env.MONGODB_USERNAME;
+const mongoPassword = process.env.MONGODB_PASSWORD;
+const mongoHost = process.env.MONGODB_HOST;
+const mongoDatabase = process.env.MONGODB_DATABASE || "finance-tracker";
+const mongoAppName = process.env.MONGODB_APP_NAME || "Finance-Tracking";
+
+const mongoUri =
+  process.env.MONGODB_URI ||
+  (mongoUser && mongoPassword && mongoHost
+    ? `mongodb+srv://${encodeURIComponent(mongoUser)}:${encodeURIComponent(mongoPassword)}@${mongoHost}/${mongoDatabase}?appName=${encodeURIComponent(mongoAppName)}`
+    : null);
+
+if (!mongoUri) {
+  throw new Error(
+    "Missing MongoDB connection env vars. Set MONGODB_URI or MONGODB_USERNAME/MONGODB_PASSWORD/MONGODB_HOST in backend/.env",
+  );
+}
 
 mongoose
-  .connect("mongodb://localhost:27017/finance-tracker")
+  .connect(mongoUri)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
