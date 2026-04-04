@@ -262,12 +262,19 @@ function MainDashBoard(props) {
 
                   <tbody className="divide-y divide-outline-variant/5">
                     {recentTransactions.length ? (
-                      recentTransactions.map((transaction) => {
+                      recentTransactions.map((transaction, index) => {
                         const isIncome = transaction.type === "income";
+                        const normalizedId = String(transaction.id || "");
+                        const shortId = normalizedId
+                          ? normalizedId.slice(-6).toUpperCase()
+                          : "N/A";
+                        const rowKey =
+                          normalizedId ||
+                          `${transaction.type || "txn"}-${transaction.date || "date"}-${index}`;
 
                         return (
                           <tr
-                            key={transaction.id}
+                            key={rowKey}
                             className="group cursor-pointer transition-colors hover:bg-surface-dim"
                           >
                             <td className="py-6 pr-4">
@@ -289,8 +296,8 @@ function MainDashBoard(props) {
                                   </div>
                                   <div className="text-xs font-medium text-on-secondary-container/60">
                                     {isIncome
-                                      ? `Income #${transaction.id.slice(-6).toUpperCase()}`
-                                      : `Expense #${transaction.id.slice(-6).toUpperCase()}`}
+                                      ? `Income #${shortId}`
+                                      : `Expense #${shortId}`}
                                   </div>
                                 </div>
                               </div>

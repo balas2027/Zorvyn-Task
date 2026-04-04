@@ -928,42 +928,113 @@ app.get("/api/summary/:userId", async (req, res) => {
   const { userId } = req.params;
 
   try {
-    const incomes = await Income.find({ userId });
-    const expenses = await Expense.find({ userId });
-    const user = await User.findById(userId);
+    const [incomes, expenses, transactions, user] = await Promise.all([
+      Income.find({ userId }).lean(),
+      Expense.find({ userId }).lean(),
+      Transaction.find({ userId }).lean(),
+      User.findById(userId).lean(),
+    ]);
 
     if (!user) {
       return res.status(404).json({ error: "User not found" });
     }
 
-    const totalIncome = incomes.reduce((sum, income) => {
-      return (
-        sum +
-        income.IncomeData.reduce((incomeSum, item) => incomeSum + item.value, 0)
-      );
-    }, 0);
+    const normalizeCategory = (...values) => {
+      for (const value of values) {
+        const normalized = String(value || "").trim();
+        if (normalized) {
+          return normalized;
+        }
+      }
+      return "Uncategorized";
+    };
 
-    const totalExpense = expenses.reduce((sum, expense) => {
-      return (
-        sum +
-        expense.ExpensesData.reduce(
-          (expenseSum, item) => expenseSum + item.value,
-          0,
-        )
-      );
-    }, 0);
+    const normalizedTransactions = [
+      ...transactions.map((item) => ({
+        _id: item._id,
+        type: item.type,
+        name: item.description,
+        amount: Number(item.amount) || 0,
+        date: item.date,
+        category: normalizeCategory(item.category, item.description),
+      })),
+      ...incomes.flatMap((incomeDoc) =>
+        (incomeDoc.IncomeData || []).map((entry) => ({
+          _id: entry._id,
+          type: "income",
+          name: entry.name,
+          amount: Number(entry.value) || 0,
+          date: entry.date,
+          category: normalizeCategory(
+            incomeDoc.category,
+            incomeDoc.name,
+            entry.category,
+            entry.name,
+          ),
+        })),
+      ),
+      ...expenses.flatMap((expenseDoc) =>
+        (expenseDoc.ExpensesData || []).map((entry) => ({
+          _id: entry._id,
+          type: "expense",
+          name: entry.name,
+          amount: Number(entry.value) || 0,
+          date: entry.date,
+          category: normalizeCategory(
+            expenseDoc.category,
+            expenseDoc.name,
+            entry.category,
+            entry.name,
+          ),
+        })),
+      ),
+    ].filter((item) => ["income", "expense"].includes(item.type));
+
+    const totalIncome = normalizedTransactions
+      .filter((item) => item.type === "income")
+      .reduce((sum, item) => sum + item.amount, 0);
+
+    const totalExpense = normalizedTransactions
+      .filter((item) => item.type === "expense")
+      .reduce((sum, item) => sum + item.amount, 0);
 
     const balance = totalIncome - totalExpense;
 
-    const incomeArray = incomes.map((income) => ({
-      category: income.category || income.name || "Uncategorized",
-      data: income.IncomeData,
-    }));
+    const groupedByTypeAndCategory = normalizedTransactions.reduce(
+      (accumulator, item) => {
+        const key = `${item.type}::${item.category.toLowerCase()}`;
 
-    const expenseArray = expenses.map((expense) => ({
-      category: expense.category || expense.name || "Uncategorized",
-      data: expense.ExpensesData,
-    }));
+        if (!accumulator[key]) {
+          accumulator[key] = {
+            type: item.type,
+            category: item.category,
+            data: [],
+          };
+        }
+
+        accumulator[key].data.push({
+          _id: item._id,
+          name: item.name || item.category,
+          value: item.amount,
+          date: item.date,
+        });
+
+        return accumulator;
+      },
+      {},
+    );
+
+    const groupedData = Object.values(groupedByTypeAndCategory).sort((a, b) =>
+      a.category.localeCompare(b.category),
+    );
+
+    const incomeArray = groupedData
+      .filter((item) => item.type === "income")
+      .map((item) => ({ category: item.category, data: item.data }));
+
+    const expenseArray = groupedData
+      .filter((item) => item.type === "expense")
+      .map((item) => ({ category: item.category, data: item.data }));
 
     res.status(200).json({
       user: {

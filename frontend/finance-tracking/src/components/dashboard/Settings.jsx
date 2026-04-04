@@ -249,7 +249,7 @@ function Settings() {
 
   return (
     <div className="flex-1 min-h-screen overflow-y-auto pb-8 pt-4 sm:pt-24 md:py-8 md:pt-8">
-      <div className="mx-auto px-2 md:px-10">
+      <div className="mx-auto max-w-7xl px-2 md:px-10">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-primary">Settings</h1>
           <p className="mt-2 text-sm font-medium text-on-secondary-container">
@@ -260,8 +260,8 @@ function Settings() {
           ) : null}
         </div>
 
-        <div className="grid w-full grid-cols-2 gap-8">
-          <div className="col-span-2 rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:col-span-1 md:p-8">
+        <div className="grid w-full gap-6 xl:grid-cols-3">
+          <div className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8 xl:col-span-2">
             <div className="mb-6 flex items-center gap-3">
               <div className="rounded-lg bg-blue-100 p-2">
                 <User className="h-5 w-5 text-primary" />
@@ -272,58 +272,58 @@ function Settings() {
             </div>
 
             <div className="space-y-4">
-              <label className="block">
-                <span className="text-sm font-semibold text-on-surface">
-                  Full Name
-                </span>
-                <input
-                  type="text"
-                  value={profile.name}
-                  onChange={(event) =>
-                    setProfile((prev) => ({
-                      ...prev,
-                      name: event.target.value,
-                    }))
-                  }
-                  className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
-                />
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-semibold text-on-surface">
-                  Email
-                </span>
-                <input
-                  type="email"
-                  value={profile.email}
-                  onChange={(event) =>
-                    setProfile((prev) => ({
-                      ...prev,
-                      email: event.target.value,
-                    }))
-                  }
-                  className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
-                />
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-semibold text-on-surface">
-                  Phone
-                </span>
-                <input
-                  type="text"
-                  value={profile.phone}
-                  onChange={(event) =>
-                    setProfile((prev) => ({
-                      ...prev,
-                      phone: event.target.value,
-                    }))
-                  }
-                  className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
-                />
-              </label>
-
               <div className="grid gap-3 sm:grid-cols-2">
+                <label className="block sm:col-span-1">
+                  <span className="text-sm font-semibold text-on-surface">
+                    Full Name
+                  </span>
+                  <input
+                    type="text"
+                    value={profile.name}
+                    onChange={(event) =>
+                      setProfile((prev) => ({
+                        ...prev,
+                        name: event.target.value,
+                      }))
+                    }
+                    className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
+                  />
+                </label>
+
+                <label className="block sm:col-span-1">
+                  <span className="text-sm font-semibold text-on-surface">
+                    Email
+                  </span>
+                  <input
+                    type="email"
+                    value={profile.email}
+                    onChange={(event) =>
+                      setProfile((prev) => ({
+                        ...prev,
+                        email: event.target.value,
+                      }))
+                    }
+                    className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
+                  />
+                </label>
+
+                <label className="block sm:col-span-2">
+                  <span className="text-sm font-semibold text-on-surface">
+                    Phone
+                  </span>
+                  <input
+                    type="text"
+                    value={profile.phone}
+                    onChange={(event) =>
+                      setProfile((prev) => ({
+                        ...prev,
+                        phone: event.target.value,
+                      }))
+                    }
+                    className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
+                  />
+                </label>
+
                 <label className="block">
                   <span className="text-sm font-semibold text-on-surface">
                     Currency
@@ -359,35 +359,34 @@ function Settings() {
                     className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
                   />
                 </label>
+                <label className="block sm:col-span-2">
+                  <span className="text-sm font-semibold text-on-surface">
+                    Bio
+                  </span>
+                  <textarea
+                    value={profile.bio}
+                    onChange={(event) =>
+                      setProfile((prev) => ({ ...prev, bio: event.target.value }))
+                    }
+                    rows={3}
+                    className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
+                  />
+                </label>
               </div>
-
-              <label className="block">
-                <span className="text-sm font-semibold text-on-surface">
-                  Bio
-                </span>
-                <textarea
-                  value={profile.bio}
-                  onChange={(event) =>
-                    setProfile((prev) => ({ ...prev, bio: event.target.value }))
-                  }
-                  rows={3}
-                  className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
-                />
-              </label>
 
               <button
                 type="button"
                 disabled={saving}
                 onClick={saveProfile}
-                className="mt-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white disabled:opacity-60"
+                className="mt-2 inline-flex rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white disabled:opacity-60"
               >
                 Save Profile
               </button>
             </div>
           </div>
 
-          <div className="flex-col flex gap-6">
-            <div className="col-span-2 rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:col-span-1 md:p-8">
+          <div className="flex flex-col gap-6 xl:col-span-1">
+            <div className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="rounded-lg bg-blue-100 p-2">
                   <Bell className="h-5 w-5 text-primary" />
@@ -460,7 +459,7 @@ function Settings() {
               </button>
             </div>
 
-            <div className="col-span-2 rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:col-span-1 md:p-8">
+            <div className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="rounded-lg bg-blue-100 p-2">
                   <Lock className="h-5 w-5 text-primary" />
@@ -534,7 +533,7 @@ function Settings() {
                 Save Security
               </button>
             </div>
-            <div className="col-span-2 rounded-xl border border-red-200 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:col-span-1 md:p-8">
+            <div className="rounded-xl border border-red-200/70 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="rounded-lg bg-red-100 p-2">
                   <Trash2 className="h-5 w-5 text-red-500" />
