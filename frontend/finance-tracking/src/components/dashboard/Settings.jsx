@@ -366,7 +366,10 @@ function Settings() {
                   <textarea
                     value={profile.bio}
                     onChange={(event) =>
-                      setProfile((prev) => ({ ...prev, bio: event.target.value }))
+                      setProfile((prev) => ({
+                        ...prev,
+                        bio: event.target.value,
+                      }))
                     }
                     rows={3}
                     className="mt-2 w-full rounded-xl border border-outline-variant/20 bg-white px-4 py-2 text-sm"
