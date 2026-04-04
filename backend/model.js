@@ -65,7 +65,8 @@ const CategorySchema = new Schema({
   },
 });
 
-const Category = mongoose.models.Category || mongoose.model("Category", CategorySchema);
+const Category =
+  mongoose.models.Category || mongoose.model("Category", CategorySchema);
 
 const IncomeSchema = new Schema(
   {
@@ -115,7 +116,8 @@ const ExpenseSchema = new Schema(
   { timestamps: true },
 );
 
-const Expense = mongoose.models.Expense || mongoose.model("Expense", ExpenseSchema);
+const Expense =
+  mongoose.models.Expense || mongoose.model("Expense", ExpenseSchema);
 
 const TransactionSchema = new Schema(
   {
@@ -149,7 +151,9 @@ const TransactionSchema = new Schema(
   { timestamps: true },
 );
 
-const Transaction = mongoose.models.Transaction || mongoose.model("Transaction", TransactionSchema);
+const Transaction =
+  mongoose.models.Transaction ||
+  mongoose.model("Transaction", TransactionSchema);
 
 module.exports = {
   User,

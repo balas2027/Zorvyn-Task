@@ -16,9 +16,7 @@ function UserDashboardData({ children }) {
     }
 
     try {
-      const response = await axios.get(
-        apiUrl(`/api/summary/${userId}`),
-      );
+      const response = await axios.get(apiUrl(`/api/summary/${userId}`));
       setDashboardData(response.data || null);
     } catch (error) {
       console.error("Error fetching dashboard data:", error);

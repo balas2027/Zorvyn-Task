@@ -190,16 +190,13 @@ function Transaction({
 
     try {
       if (editingId) {
-        await axios.put(
-          apiUrl(`/api/transactions/${userId}/${editingId}`),
-          {
-            description: formData.description,
-            amount: parseFloat(formData.amount),
-            category: formData.category,
-            type: formData.type,
-            date: new Date(formData.date),
-          },
-        );
+        await axios.put(apiUrl(`/api/transactions/${userId}/${editingId}`), {
+          description: formData.description,
+          amount: parseFloat(formData.amount),
+          category: formData.category,
+          type: formData.type,
+          date: new Date(formData.date),
+        });
       } else {
         const payload = {
           userId,
@@ -263,14 +260,11 @@ function Transaction({
     }
 
     try {
-      const response = await axios.post(
-        apiUrl("/api/categories"),
-        {
-          name,
-          type,
-          userId,
-        },
-      );
+      const response = await axios.post(apiUrl("/api/categories"), {
+        name,
+        type,
+        userId,
+      });
 
       await fetchCategories();
       setFormData((prev) => ({

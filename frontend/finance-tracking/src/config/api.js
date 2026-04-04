@@ -15,5 +15,7 @@ export const apiUrl = (path = "") => {
   const normalizedBaseUrl = getApiBaseUrl().replace(/\/$/, "");
   const normalizedPath = String(path).replace(/^\/+/, "");
 
-  return normalizedPath ? `${normalizedBaseUrl}/${normalizedPath}` : normalizedBaseUrl;
+  return normalizedPath
+    ? `${normalizedBaseUrl}/${normalizedPath}`
+    : normalizedBaseUrl;
 };
