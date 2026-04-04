@@ -106,10 +106,6 @@
   animation: spin-continuous 2s linear infinite;
 }
 
-.group:hover .group-hover\\:animate-spin-continuous {
-  animation: spin-continuous 1s linear infinite;
-}
-
 /* Recharts focus outline cleanup */
 .recharts-wrapper,
 .recharts-wrapper:focus,
