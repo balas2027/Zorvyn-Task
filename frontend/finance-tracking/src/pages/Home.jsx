@@ -51,7 +51,7 @@ function Home() {
                   Sign In
                 </button>
                 <button
-                  className="border border-primary text-primary hover:bg-primary dark:bg-white hover:dark:bg-[#00286d] hover:dark:text-white hover:text-white font-headline font-bold tracking-tight text-sm px-6 py-2.5 rounded-xl active:scale-95 duration-200 shadow-lg shadow-primary/20 cursor-pointer"
+                  className="border border-primary text-primary bg-white font-headline font-bold tracking-tight text-sm px-6 py-2.5 rounded-xl active:scale-95 duration-200 shadow-lg shadow-primary/20 cursor-pointer"
                   onClick={() => navigate("/signup")}
                 >
                   Get Started
