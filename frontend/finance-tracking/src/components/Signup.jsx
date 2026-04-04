@@ -153,7 +153,7 @@ function Signup() {
             <div className="mt-8 text-center">
               <p className="text-sm text-on-secondary-container">
                 Already have an account?{" "}
-                <span className="text-primary font-bold cursor-pointer hover:underline">
+                <span className="text-primary font-bold cursor-pointer hover:underline" onClick={() => navigate('/login')}>
                   Sign in
                 </span>
               </p>
