@@ -1,7 +1,7 @@
 # Finance Dashboard UI Assignment
 
 Frontend project for a finance dashboard assignment focused on UI clarity, interactivity, state handling, and responsive design.
-
+For Demo Use : user1@gmail.com , password : 123456
 ---
 
 ## Tech Stack
