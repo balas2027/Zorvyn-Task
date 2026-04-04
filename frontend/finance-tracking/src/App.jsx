@@ -1,10 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import UserDashboardData from "@/api/UserDashboardData";
 import PageLoader from "@/components/common/PageLoader";
@@ -41,6 +36,10 @@ const Dashboard = lazyWithRetry(
   () => import("./pages/Dashboard"),
   "lazy-retry-dashboard",
 );
+const NotFound = lazyWithRetry(
+  () => import("./pages/NotFound"),
+  "lazy-retry-not-found",
+);
 function App() {
   return (
     <Router>
@@ -59,7 +58,7 @@ function App() {
             }
           />
 
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </Router>
