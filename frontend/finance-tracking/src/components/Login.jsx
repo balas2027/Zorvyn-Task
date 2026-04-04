@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../pages/home.css";
 import { useActionNotifier } from "@/hooks/useActionNotifier";
+import { apiUrl } from "@/config/api";
 
 function Login() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post("https://zorvyn-task-lemon.vercel.app/api/login", {
+      const response = await axios.post(apiUrl("/api/login"), {
         email: form.email,
         password: form.password,
       });

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../../pages/home.css";
 import { useActionNotifier } from "@/hooks/useActionNotifier";
+import { apiUrl } from "@/config/api";
 
 const DEFAULT_SETTINGS = {
   notifications: {
@@ -66,7 +67,7 @@ function Settings() {
 
       try {
         const response = await axios.get(
-          `https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`,
+          apiUrl(`/api/users/${userId}/profile`),
         );
         const user = response.data?.user;
         if (!user) {
@@ -111,7 +112,7 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`, {
+      await axios.put(apiUrl(`/api/users/${userId}/profile`), {
         name: profile.name,
         email: profile.email,
         phone: profile.phone,
@@ -144,7 +145,7 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/settings`, {
+      await axios.put(apiUrl(`/api/users/${userId}/settings`), {
         notifications,
       });
 
@@ -179,12 +180,12 @@ function Settings() {
       setSaving(true);
       setStatus("");
 
-      await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/settings`, {
+      await axios.put(apiUrl(`/api/users/${userId}/settings`), {
         security,
       });
 
       if (canSavePassword) {
-        await axios.put(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}/password`, {
+        await axios.put(apiUrl(`/api/users/${userId}/password`), {
           currentPassword: passwordForm.currentPassword,
           newPassword: passwordForm.newPassword,
         });
@@ -222,7 +223,7 @@ function Settings() {
 
     try {
       setSaving(true);
-      await axios.delete(`https://zorvyn-task-lemon.vercel.app/api/users/${userId}`);
+      await axios.delete(apiUrl(`/api/users/${userId}`));
       localStorage.removeItem("userId");
       notify({ type: "success", title: "Account deleted successfully" });
       navigate("/signup", { replace: true });

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { Mail, Phone, Shield, UserCircle2, Wallet } from "lucide-react";
+import { apiUrl } from "@/config/api";
 
 function Profile({ dashboardData }) {
   const [profile, setProfile] = useState(null);
@@ -17,7 +18,7 @@ function Profile({ dashboardData }) {
 
       try {
         const response = await axios.get(
-          `https://zorvyn-task-lemon.vercel.app/api/users/${userId}/profile`,
+          apiUrl(`/api/users/${userId}/profile`),
         );
         setProfile(response.data?.user || null);
       } catch (error) {

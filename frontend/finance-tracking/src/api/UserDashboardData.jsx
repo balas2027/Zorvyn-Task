@@ -2,6 +2,7 @@ import React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { DataDashboardContext } from "@/context/DashboardDataContext";
+import { apiUrl } from "@/config/api";
 
 function UserDashboardData({ children }) {
   const [dashboardData, setDashboardData] = useState(null);
@@ -16,7 +17,7 @@ function UserDashboardData({ children }) {
 
     try {
       const response = await axios.get(
-        `https://zorvyn-task-lemon.vercel.app/api/summary/${userId}`,
+        apiUrl(`/api/summary/${userId}`),
       );
       setDashboardData(response.data || null);
     } catch (error) {

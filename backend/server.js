@@ -1,35 +1,26 @@
 const express = require("express");
 const cors = require("cors");
 const { User, Expense, Income, Category, Transaction } = require("./model");
+const { connectToMongo } = require("./db");
 const app = express();
 require("dotenv").config();
 
-const mongoose = require("mongoose");
-const mongoUser = process.env.MONGODB_USERNAME;
-const mongoPassword = process.env.MONGODB_PASSWORD;
-const mongoHost = process.env.MONGODB_HOST;
-const mongoDatabase = process.env.MONGODB_DATABASE || "finance-tracker";
-const mongoAppName = process.env.MONGODB_APP_NAME || "Finance-Tracking";
-
-const mongoUri =
-  process.env.MONGODB_URI ||
-  (mongoUser && mongoPassword && mongoHost
-    ? `mongodb+srv://${encodeURIComponent(mongoUser)}:${encodeURIComponent(mongoPassword)}@${mongoHost}/${mongoDatabase}?appName=${encodeURIComponent(mongoAppName)}`
-    : null);
-
-if (!mongoUri) {
-  throw new Error(
-    "Missing MongoDB connection env vars. Set MONGODB_URI or MONGODB_USERNAME/MONGODB_PASSWORD/MONGODB_HOST in backend/.env",
-  );
-}
-
-mongoose
-  .connect(mongoUri)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("Error connecting to MongoDB:", err));
-
 app.use(cors());
 app.use(express.json());
+
+app.use(async (req, res, next) => {
+  if (req.path === "/" || req.path === "/api") {
+    return next();
+  }
+
+  try {
+    await connectToMongo();
+    return next();
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+    return res.status(503).json({ error: "Database unavailable" });
+  }
+});
 
 const DEFAULT_USER_SETTINGS = {
   notifications: {

@@ -4,6 +4,7 @@ import "../pages/home.css";
 import { useState } from "react";
 import axios from "axios";
 import { useActionNotifier } from "@/hooks/useActionNotifier";
+import { apiUrl } from "@/config/api";
 
 function Signup() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post("https://zorvyn-task-lemon.vercel.app/api/register", {
+      const response = await axios.post(apiUrl("/api/register"), {
         name: form.name,
         email: form.email,
         password: form.password,

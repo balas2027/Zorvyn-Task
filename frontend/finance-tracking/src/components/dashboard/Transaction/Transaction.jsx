@@ -4,6 +4,7 @@ import axios from "axios";
 import { useActionNotifier } from "@/hooks/useActionNotifier";
 import TransactionForm from "@/components/dashboard/Transaction/TransactionForm";
 import TransactionList from "@/components/dashboard/Transaction/TransactionList";
+import { apiUrl } from "@/config/api";
 
 function Transaction({
   viewMode = "list",
@@ -108,7 +109,7 @@ function Transaction({
         params.append("search", trimmedSearch);
       }
 
-      const url = `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}?${params.toString()}`;
+      const url = apiUrl(`/api/transactions/${userId}?${params.toString()}`);
       const response = await axios.get(url);
 
       setTransactions(response.data?.data || []);
@@ -136,7 +137,7 @@ function Transaction({
     }
 
     try {
-      const response = await axios.get("https://zorvyn-task-lemon.vercel.app/api/categories", {
+      const response = await axios.get(apiUrl("/api/categories"), {
         params: { userId },
       });
       setCategories(response.data?.categories || []);
@@ -190,7 +191,7 @@ function Transaction({
     try {
       if (editingId) {
         await axios.put(
-          `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}/${editingId}`,
+          apiUrl(`/api/transactions/${userId}/${editingId}`),
           {
             description: formData.description,
             amount: parseFloat(formData.amount),
@@ -209,9 +210,9 @@ function Transaction({
         };
 
         if (formData.type === "income") {
-          await axios.post("https://zorvyn-task-lemon.vercel.app/api/incomes", payload);
+          await axios.post(apiUrl("/api/incomes"), payload);
         } else {
-          await axios.post("https://zorvyn-task-lemon.vercel.app/api/expenses", payload);
+          await axios.post(apiUrl("/api/expenses"), payload);
         }
       }
 
@@ -244,7 +245,7 @@ function Transaction({
 
     try {
       await axios.delete(
-        `https://zorvyn-task-lemon.vercel.app/api/transactions/${userId}/${transactionId}`,
+        apiUrl(`/api/transactions/${userId}/${transactionId}`),
       );
       await fetchTransactions();
       onTransactionChanged();
@@ -263,7 +264,7 @@ function Transaction({
 
     try {
       const response = await axios.post(
-        "https://zorvyn-task-lemon.vercel.app/api/categories",
+        apiUrl("/api/categories"),
         {
           name,
           type,
