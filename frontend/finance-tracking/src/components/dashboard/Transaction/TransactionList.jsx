@@ -124,7 +124,7 @@ function TransactionList({
         <button
           type="button"
           onClick={handleOpenDrawer}
-          className="ml-3 inline-flex items-center gap-2 rounded-full border border-black/10 bg-surface-container px-4 py-4 text-sm font-semibold text-on-surface transition hover:bg-surface-container-high"
+          className="ml-3 inline-flex items-center gap-2 rounded-full border border-black/10 bg-surface-container px-4 py-2 text-sm font-semibold text-on-surface transition hover:bg-surface-container-high"
         >
           <SlidersHorizontal className="h-4 w-4" />
           Filters

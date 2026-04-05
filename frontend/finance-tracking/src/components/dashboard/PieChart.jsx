@@ -122,8 +122,10 @@ function PieChartCard({ transactions = [] }) {
                 data={chartData}
                 dataKey="value"
                 nameKey="name"
-                innerRadius={72}
-                outerRadius={108}
+                sm:innerRadius={72}
+                innerRadius={35}
+                sm:outerRadius={108}
+                outerRadius={60}
                 paddingAngle={3}
                 stroke="rgba(255,255,255,0.9)"
                 strokeWidth={2}
@@ -136,7 +138,7 @@ function PieChartCard({ transactions = [] }) {
                     fill="var(--foreground, #002d4f)"
                     className="text-xs font-semibold"
                   >
-                    {`${name}: $ ${formatValue(value)}`}
+                    {`${name}:`} {` ${formatValue(value)}`}
                   </text>
                 )}
               >

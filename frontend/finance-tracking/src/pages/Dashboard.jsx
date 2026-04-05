@@ -120,9 +120,9 @@ function Dashboard() {
         />
 
         <div className="flex flex-1 flex-col min-w-0 h-screen md:h-auto">
-          <div className="navbar bg-white shrink-0 px-4 md:px-10 py-5 flex flex-row justify-between items-center">
+          <div className="navbar bg-white shrink-0 px-2 md:px-10 py-5 flex flex-row justify-between items-center">
             <div className="flex items-center gap-4">
-              <div className="heading flex items-center gap-2 sm:text-2xl font-bold text-secondary">
+              <div className="heading flex items-center gap-2 text-xs sm:text-2xl font-bold text-secondary">
                 <span>
                   <ChartNoAxesCombined className="h-6 w-6" />
                 </span>{" "}
@@ -130,7 +130,7 @@ function Dashboard() {
               </div>
             </div>
             <div className="action-buttons flex gap-2 sm:gap-8">
-              <div className="icon w-10 h-10 rounded-full hover:bg-blue-100 flex items-center justify-center text-primary cursor-pointer">
+              <div className="icon w-10 h-10 sm:flex hidden rounded-full hover:bg-blue-100  items-center justify-center text-primary cursor-pointer">
                 <Bell className="h-5 w-5" />
               </div>
               <div
@@ -164,7 +164,7 @@ function Dashboard() {
               <button
                 type="button"
                 onClick={() => setActiveNavItem("Settings")}
-                className="icon w-10 h-10 rounded-full hover:bg-blue-100 flex items-center justify-center text-primary cursor-pointer"
+                className="icon w-10 h-10  rounded-full hover:bg-blue-100 hidden sm:flex items-center justify-center text-primary cursor-pointer"
                 aria-label="Open settings"
               >
                 <SettingsIcon className="h-5 w-5" />

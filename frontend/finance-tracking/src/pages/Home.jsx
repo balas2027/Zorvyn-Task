@@ -10,9 +10,9 @@ function Home() {
       <div>
         <div className="bg-background text-on-surface  font-body selection:bg-primary-container selection:text-white">
           <div className="w-full top-0 fixed z-50 bg-[#f7f9ff] backdrop-blur-xl dark:bg-[#001d33]">
-            <div className="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+            <div className="flex justify-between items-center px-2 sm:px-8 h-20 max-w-7xl mx-auto">
               <div
-                className="text-xl font-bold tracking-tighter text-[#00286d] dark:text-[#edf4ff] font-headline cursor-pointer"
+                className="text-lg sm:text-xl font-bold w-1/2 tracking-tighter text-[#00286d] dark:text-[#edf4ff] font-headline cursor-pointer"
                 onClick={() => navigate("/")}
               >
                 The Financial Architect
@@ -45,13 +45,13 @@ function Home() {
               </div>
               <div className="flex items-center space-x-4">
                 <button
-                  className="text-[#004D40] hover:scale-110 dark:text-white font-headline font-bold tracking-tight text-sm px-4 py-2  transition-all rounded-lg cursor-pointer"
+                  className="text-[#004D40] w-full hover:scale-110  dark:text-white font-headline font-bold tracking-tight text-sm px-4 py-2  transition-all rounded-lg cursor-pointer"
                   onClick={() => navigate("/login")}
                 >
                   Sign In
                 </button>
                 <button
-                  className="border border-primary text-primary bg-white font-headline font-bold tracking-tight text-sm px-6 py-2.5 rounded-xl active:scale-95 duration-200 shadow-lg shadow-primary/20 cursor-pointer"
+                  className="border border-primary text-primary w-full bg-white font-headline font-bold tracking-tight text-sm px-6 py-2.5 rounded-xl active:scale-95 duration-200 shadow-lg shadow-primary/20 cursor-pointer"
                   onClick={() => navigate("/signup")}
                 >
                   Get Started
@@ -61,13 +61,13 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden pt-25 pb-32 px-8">
+        <div className="relative overflow-hidden pt-25 py-10 md:py-24 px-2 sm:px-8">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="z-10">
-              <span className="inline-block py-1 px-3 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold tracking-wider uppercase mb-6">
+              <span className="inline-block py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold tracking-wider uppercase mb-6">
                 Intelligent Wealth Management
               </span>
-              <h1 className="font-headline text-6xl md:text-7xl font-extrabold tracking-tight text-primary leading-[1.1] mb-8">
+              <h1 className="font-headline text-4xl  md:text-7xl font-extrabold tracking-tight text-primary leading-[1.1] mb-8">
                 Architect Your <br />
                 <span className="text-tertiary-fixed-dim">
                   Financial Future
@@ -78,14 +78,14 @@ function Home() {
                 automated flows combined with powerful, editorial-grade insights
                 designed for the sophisticated investor.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-row gap-4">
                 <button
-                  className="primary-gradient text-white px-8 py-4 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/25 active:scale-95 transition-all cursor-pointer"
+                  className="primary-gradient text-white px-8 py-4 rounded-xl font-headline font-bold sm:text-lg shadow-xl shadow-primary/25 active:scale-95 transition-all cursor-pointer"
                   onClick={() => navigate("/signup")}
                 >
                   Start Free Trial
                 </button>
-                <button className="border border-black/10 text-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-low transition-all cursor-pointer">
+                <button className="border border-black/10 text-primary px-8 py-4 rounded-xl font-headline font-bold sm:text-lg hover:bg-surface-container-low transition-all cursor-pointer">
                   View Demo
                 </button>
               </div>
@@ -125,10 +125,10 @@ function Home() {
           </div>
         </div>
 
-        <div id="product" className="py-24 px-8 bg-surface-container-low">
+        <div id="product" className="py-10 md:py-24 px-2 sm:px-8 bg-surface-container-low">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="font-headline text-4xl font-extrabold text-primary tracking-tight mb-4">
+              <h2 className="font-headline text-3xl sm:text-4xl font-extrabold text-primary tracking-tight mb-4">
                 Precision Engineered Features
               </h2>
               <p className="text-on-secondary-container max-w-2xl mx-auto">
@@ -197,7 +197,7 @@ function Home() {
           </div>
         </div>
 
-        <div id="reviews" className="py-32 px-8 overflow-hidden">
+        <div id="reviews" className="py-10 md:py-24 px-2 sm:px-8 overflow-hidden">
           <div className="max-w-5xl mx-auto relative">
             <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 opacity-5">
               <span
@@ -250,7 +250,7 @@ function Home() {
                   star
                 </span>
               </div>
-              <blockquote className="font-headline text-3xl md:text-5xl font-bold text-primary leading-tight mb-12 tracking-tight italic">
+              <blockquote className="font-headline text-2xl sm:text-3xl md:text-5xl font-bold text-primary leading-tight mb-12 tracking-tight italic">
                 "The Financial Architect has completely transformed how I view
                 my net worth. It's the first tool that feels as serious about my
                 money as I am."
@@ -275,7 +275,7 @@ function Home() {
           </div>
         </div>
 
-        <div id="pricing" className="py-20 px-8">
+        <div id="pricing" className="py-10 md:py-24 px-2 sm:px-8">
           <div className="max-w-7xl mx-auto primary-gradient rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
               <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-[120px]"></div>

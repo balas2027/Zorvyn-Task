@@ -1,4 +1,4 @@
-const LOCAL_API_BASE_URL = "http://localhost:5000";
+const LOCAL_API_BASE_URL = "https://zorvyn-task-lemon.vercel.app";
 const DEFAULT_PRODUCTION_API_BASE_URL = "https://zorvyn-task-lemon.vercel.app";
 
 export const getApiBaseUrl = () => {
