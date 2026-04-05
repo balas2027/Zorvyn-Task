@@ -260,8 +260,8 @@ function Settings() {
           ) : null}
         </div>
 
-        <div className="grid w-full gap-6 xl:grid-cols-3">
-          <div className="rounded-xl border border-black/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8 xl:col-span-2">
+        <div className="grid w-full gap-6  xl:grid-cols-3">
+          <div className="rounded-xl border border-black/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8 col-span-3 xl:col-span-2">
             <div className="mb-6 flex items-center gap-3">
               <div className="rounded-lg bg-blue-100 p-2">
                 <User className="h-5 w-5 text-primary" />
@@ -388,7 +388,7 @@ function Settings() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 xl:col-span-1">
+          <div className="flex flex-col gap-6 col-span-3 xl:col-span-1">
             <div className="rounded-xl border border-black/10 bg-surface-container-low p-6 shadow-[0_8px_32px_-8px_rgba(0,29,51,0.06)] md:p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="rounded-lg bg-blue-100 p-2">
